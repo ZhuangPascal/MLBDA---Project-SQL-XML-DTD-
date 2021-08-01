@@ -1,0 +1,1 @@
+//pays[@nom="France"]//riviere[@source="OUI"]

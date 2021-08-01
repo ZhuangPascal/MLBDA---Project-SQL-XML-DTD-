@@ -1,0 +1,28 @@
+<!ELEMENT mondial (continent+) >
+
+<!ELEMENT continent (pays+) >
+<!ATTLIST continent nom CDATA #REQUIRED >
+
+<!ELEMENT pays (province+, frontiere*, organization*) >
+<!ATTLIST pays 	nom CDATA #REQUIRED 
+				codepays CDATA #REQUIRED
+				population CDATA #REQUIRED >
+
+<!ELEMENT province (riviere*, montagne*) >
+<!ATTLIST province nom CDATA #REQUIRED >
+
+<!ELEMENT riviere EMPTY >
+<!ATTLIST riviere nom CDATA #REQUIRED 
+				  source CDATA #REQUIRED>
+
+<!ELEMENT montagne (#PCDATA) >
+<!ATTLIST montagne 	nom CDATA #IMPLIED
+					altitude CDATA #IMPLIED 
+					latitude CDATA #IMPLIED 
+					longitude CDATA #IMPLIED>
+
+<!ELEMENT frontiere (#PCDATA) >
+<!ATTLIST frontiere	longueur CDATA #REQUIRED >
+
+<!ELEMENT organization (#PCDATA) >
+<!ATTLIST organization 	date_creation CDATA #IMPLIED >

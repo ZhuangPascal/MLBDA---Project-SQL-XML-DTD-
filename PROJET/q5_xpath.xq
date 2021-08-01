@@ -1,0 +1,1 @@
+//pays[not(//pays/sum(frontiere/number(@longueur)) > sum(./frontiere/number(@longueur)))]/@nom

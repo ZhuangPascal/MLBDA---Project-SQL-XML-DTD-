@@ -1,0 +1,1 @@
+//pays/organization/text()
